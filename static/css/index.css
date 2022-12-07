@@ -1,0 +1,208 @@
+@import url("base.css");
+
+/*-==========---------- HERO ----------============-*/
+
+.hero{
+  margin-top: 120px;
+  height: calc(100vh - 120px);
+  /* background-color: #5f7862; */
+  /* background-color: #7e997a; */
+  /* background-color: #f7f7fd; */
+  background-image: url(../images-nutrino/nutrino-electron.png);
+  /* background-position: center bottom 10px; */
+  background-repeat: no-repeat;
+  background-size: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-wrap {
+  width: 40%;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 42px;
+  color: #5f7862;
+}
+
+.hero-text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*-==========---------- NEUTRINO ----------============-*/
+
+.neutrino,
+.image-classification,
+.gallery {
+  margin-top: 150px;
+  width: 100%;
+}
+
+.gallery {
+  margin-top: 100px;
+}
+
+.neutrino {
+  margin: 100px 0;
+}
+
+.content-middle-neutrino,
+.content-middle-gallery {
+  display: flex;
+  align-items: center;
+}
+
+.neutrino-left,
+.neutrino-right,
+.gallery-left,
+.gallery-right {
+  width: 50%;
+}
+
+.neutrino-left p,
+.neutrino-right img {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.neutrino .block-heading span {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*-==========---------- ENERGY ----------============-*/
+
+.energy,
+.image-classification,
+.gallery {
+  margin-top: 150px;
+  width: 100%;
+}
+
+.gallery {
+  margin-top: 100px;
+}
+
+.energy {
+  margin: 100px 0;
+}
+
+.content-middle-energy,
+.content-middle-gallery {
+  display: flex;
+  align-items: center;
+}
+
+.energy-left,
+.energy-right,
+.gallery-left,
+.gallery-right {
+  width: 50%;
+}
+
+.energy-left p,
+.energy-right img {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.energy .block-heading span {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*-==========---------- IMAGE CLASSIFICATION ----------============-*/
+
+.image-classification {
+  background-color: #4b36f8;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+
+.ic-wrap {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  color: white;
+}
+
+.ic-wrap h2 {
+  color: white;
+}
+
+/*-==========---------- OUTPUT ----------============-*/
+
+.image-classification{
+	background-color: #4b36f8;
+	padding: 50px 0;
+	margin-top: 100px;
+}
+
+.ic-wrap{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	color: white;
+}
+
+.ic-wrap h2{
+	color: white;
+}
+
+/*-==========---------- GALLERY ----------============-*/
+
+.gallery-left div {
+  width: 60%;
+  margin: 0 20%;
+}
+
+.gallery-left h1 {
+  width: auto;
+  font-size: 42px;
+}
+.gallery-right img {
+  margin: 0 14.5%;
+  width: 71%;
+}
+
+.gallery-left button {
+  background-color: #0f766e;
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 50px;
+  margin-top: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/*-==========---------- MISCELLENIOUS ----------============-*/
+
+.footer {
+  margin-top: 0;
+}
+
+.block-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.font-style-b {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+}
+
+.text-center {
+  text-align: center;
+}

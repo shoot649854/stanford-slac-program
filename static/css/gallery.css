@@ -1,0 +1,36 @@
+/**
+	References:
+	https://www.onyalife.com/eco-friendly-products/
+	https://theworldpursuit.com/list-of-eco-friendly-products/
+*/
+
+.items-grid {
+  background-image: url(../images/draw2.png);
+  background-size: 300px;
+  background-repeat: repeat-x;
+  margin: 150px auto 0 auto;
+  padding: 170px 20px 0 20px;
+  max-width: 1536px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+  grid-gap: 70px 1rem;
+}
+
+.image-wrap {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item img {
+  max-width: 300px;
+  max-height: 600px;
+  margin: 0 0 0 40px;
+}
+
+.item-name {
+  margin-top: 10px;
+}
