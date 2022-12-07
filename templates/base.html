@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stanford's SLAC Program STEM Media Competition</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/base.css') }}"
+    />
+    {% block head %}{% endblock %}
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-wrap">
+        <div class="logo">
+          <a href="/">Stanford's SLAC Program STEM Media Competition Project</a>
+        </div>
+        <div class="menu-items">
+          <a href="/ML-Research">ML Research</a>
+        </div>
+      </div>
+
+    </header>
+    {% block body %}{% endblock %}
+    <footer class="footer">Copyright © ShotoMorisaki 2022</footer>
+  </body>
+</html>

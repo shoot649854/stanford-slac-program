@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/energy.css') }}">
+{% endblock %}
+{% block body %}
+
+<section>
+	<section class="hero">
+        <div class="hero-wrap">
+            <h1 class="hero-heading">Machine Learning research </h1>
+
+            <p class="hero-text">
+            Visuzlizing neutrino data to grasp correlation. Access through
+            <a href="https://github.com/shoot649854/neutrino-ml">github repository</a>
+            </p>
+
+        </div>
+    </section>
+
+<!-- 1 -->
+    <section id="gallery" class="gallery">
+        <div class="content-middle-gallery">
+            <div class="gallery-left">
+                <pre>
+        print(data.shape)
+        print("---"*30)
+        print(data.columns)
+        print("---"*30)
+        print(data.info())
+        print("---"*30)
+        print(data.describe().T)
+        print("---"*30)
+        print(data.corr())
+        print("---"*30)
+        print(data.isnull().sum())
+        print("---"*30)
+        print(data.where(data["E_nu/GeV_min"] < 2.8).value_counts().index)
+        print("---"*30)
+        print(data.where(data["A_Eff_cm2"] < 100000).value_counts().index)
+        print("---"*30)
+        print(data.where(data["Dec_nu_min_deg"] < -50).value_counts().index)
+        print("---"*30)
+                </pre>
+            </div>
+
+            <div class="gallery-right">
+                <img src="{{ url_for('static', filename='ML-Research/ml-research-1.png') }}"/>
+            </div>
+
+        </div>
+    </section>
+    <section class="neutrino">
+        <div class="content-middle-neutrino">
+          <div class="neutrino-center">
+            <p>
+              This tells us what kind of the information enabled by pandas we have in this 
+              data set. 
+              
+              log10(Enu/GeV)min, log10(Enu/GeV)max: The minimum and maximum of the energy bin used to 
+              caclulate the average effective area. Note that this uses the neutrino's true energy and 
+              not the reconstructed muon energy.
+
+              Decnumin[deg], Decnumax[deg]: The minimum and maximum of the declination of the neutrino 
+              origin. Again, note that this is the true direction of the neutrino and not the 
+              reconstructed muon direction.
+
+              A _ Eff _ cm2: The average effective area across a bin.
+            </p>
+          </div>
+        </div>
+    </section>
+
+
+<!-- 2 -->
+    <section id="gallery" class="gallery">
+        <div class="content-middle-gallery">
+            <div class="gallery-center">
+                <pre>
+        corrPearson = data.corr(method="pearson")
+        corrSpearman = data.corr(method="spearman")
+        figure = plt.figure(figsize=(15,8))
+        sns.heatmap(corrPearson,annot=True,vmin=-1,vmax=1,center=0,cmap="coolwarm")
+        plt.title("PEARSON CORR")
+        plt.xlabel("COLUMNS")
+        plt.ylabel("COLUMNS")
+        plt.show()
+                </pre>
+            </div>
+
+            <div class="gallery-right">
+                <img src="{{ url_for('static', filename='ML-Research/output.png') }}"/>
+            </div>
+        </div>
+    </section>
+    <section class="neutrino">
+        <div class="content-middle-neutrino">
+          <div class="neutrino-center">
+            <p>
+                This is data table representation by heatmap and this shows correlation between 
+                E_nu/GeV_min, A_Eff_cm2, and Dec_nu_min_deg. Things I realized here is that 
+                it is predictable to see correlation between the same categories, but it is 
+                interesting to see E_nu/GeV_min and A_Eff_cm2 has some reaction. 
+            </p>
+          </div>
+        </div>
+    </section>
+
+
+<!-- 3 -->
+    <section id="gallery" class="gallery">
+        <div class="content-middle-gallery">
+            <div class="gallery-center">
+                <pre>
+        figure = plt.figure(figsize=(15,8))
+        sns.barplot(x="E_nu/GeV_max",y="A_Eff_cm2",data=data,color="black")
+        plt.show()
+                </pre>
+            </div>
+
+            <div class="gallery-right">
+                <img src="{{ url_for('static', filename='ML-Research/output-2.png') }}"/>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <div class="content-middle-gallery">
+            <div class="gallery-center">
+                <pre>
+        figure = plt.figure(figsize=(20,8))
+        sns.barplot(x="Dec_nu_max_deg",y="A_Eff_cm2",data=data,color="black")
+        plt.show()
+                </pre>
+            </div>
+
+            <div class="gallery-right">
+                <img src="{{ url_for('static', filename='ML-Research/output-3.png') }}"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="neutrino">
+        <div class="content-middle-neutrino">
+          <div class="neutrino-center">
+            <p>
+                
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="content-middle-gallery">
+            <div class="gallery-center">
+                <pre>
+        figure = plt.figure(figsize=(20,10))
+        sns.relplot(x="E_nu/GeV_min", y="A_Eff_cm2", sizes=(40, 400), alpha=.2, 
+            color="r",height=10, data=data)
+        plt.show()
+                </pre>
+            </div>
+
+            <div class="gallery-right">
+                <img src="{{ url_for('static', filename='ML-Research/output-4.png') }}"/>
+            </div>
+        </div>
+    </section>
+
+<!--  -->
+    <section id="gallery" class="gallery">
+        <div class="content-middle-gallery">
+            <div class="gallery-center">
+                <pre>
+        figure = plt.figure(figsize=(20,10))
+        sns.relplot(x="Dec_nu_min_deg", y="A_Eff_cm2", sizes=(40, 400), alpha=.2, 
+            color="r",height=10, data=data)
+        plt.show()
+                </pre>
+            </div>
+
+            <div class="gallery-right">
+                <img src="{{ url_for('static', filename='ML-Research/output-5.png') }}"/>
+            </div>
+        </div>
+    </section>
+
+        
+</section>
+{% endblock %}

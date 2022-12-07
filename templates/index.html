@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<section class="hero">
+  <div class="hero-wrap">
+    <h1 class="hero-heading">What is neutrino? </h1>
+    <p class="hero-text">
+      This is a project for Stanford's SLAC Program STEM Media Competition
+      by Shoto Morisaki, sharing an idea of physics. 
+    </p>
+  </div>
+</section>
+
+<section class="neutrino">
+  <h2 class="block-heading">What's <span> neutrino </span></h1>
+  <div class="content-middle-neutrino">
+    <div class="neutrino-left font-style-b text-center">
+      <p>
+        It has 3 types of nutrino, electron neutrino (νe) muon neutrino (νμ) tau neutrino (ντ). 
+        Nutrino does not react for most of the time, like this electron goes through without hitting. 
+        Nutrino was not discovered before 1990, but based on the study, scientists found out that 
+        Nutrino exists a lot more in our planet. It comes from the sun as solar nutrino, 
+        from planet explosion as nuclear reactor, and from atmosphere as atmospheric nutrino. 
+      </p>
+    </div>
+    <div class="neutrino-right">
+      <img src="{{ url_for('static', filename='images-nutrino/nutrino.png') }}" />
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <h2 class="block-heading">
+    Solar Neutrino 
+  </h2>
+  <div class="content-middle-gallery">
+    <div class="gallery-left font-style-b">
+      <div>
+        <p>
+          Solar neutrinos are electron neutrinos produced in the sun as a result of nuclear 
+          fusion. This reaction produces 86% of all solar neutrinos. In the proton-proton chain
+          reaction in the standard solar model, deuterium fuses with another proton to form 
+          three helium atoms and gamma rays.
+        </p>
+      </div>
+    </div>
+    <div class="gallery-right">
+      <img src="{{ url_for('static', filename='images-nutrino/nasa-solar.jpg') }}" alt="Snake and Ladder" />
+    </div>
+  </div>
+</section>
+
+
+
+<section id="gallery" class="gallery">
+  <h2 class="block-heading">
+    Atmospheric Neutrino 
+  </h2>
+  <div class="content-middle-gallery">
+    <div class="gallery-left font-style-b">
+      <div>
+        <p>
+          Atmospheric neutrinos are typically produced around 15 kilometers above Earth’s 
+          surface. They form when a cosmic ray, an energetic particle from space, crashes 
+          into Earth’s atmosphere. These particles are typically protons, though they can 
+          also be helium or heavier nuclei. When they strike an atomic nucleus in our 
+          atmosphere, there is a cascade of particles. Short-lived particles called mesons 
+          form, most of them pions (disappointingly, they are not made of pie). These are 
+          unstable particles made of two quarks, and they rapidly decay into muons and muon 
+          antineutrinos (or antimuons and muon neutrinos). A muon is also unstable, so it 
+          will usually decay into an electron, electron antineutrino, and muon neutrino. 
+          Thus, about two-thirds of atmospheric neutrinos are muon neutrinos and antineutrinos, 
+          and the remainder are electron neutrinos and antineutrinos.
+        </p>
+      </div>
+    </div>
+    <div class="gallery-right">
+      <img src="{{ url_for('static', filename='images-nutrino/atmospheric-neutrino.jpg') }}" alt="Snake and Ladder" />
+    </div>
+  </div>
+</section>
+
+
+
+<section id="gallery" class="gallery">
+  <h2 class="block-heading">
+    <!-- How to find them?   -->
+  </h2>
+  <div class="content-middle-gallery">
+    <div class="gallery-left font-style-b">
+      <div>
+        <h1>
+          The Liquid Argon Time Projection Chamber (LArTPC) 
+        </h1>
+        <p>
+          Calorimetric information is important for particle identification, which is the basis for neutrino profile and 
+          oscillation measurements, an exploration beyond standard model physics. One of the major challenges in the 
+          adoption of LArTPC technology is to characterize its performance and quantify the associated systematic 
+          uncertainties. MicroBooNE, the longest operating LArTPC to date, has performed a large number of such measurements, 
+          including detector physics and electromagnetic shower reconstruction studies.
+        </p>
+      </div>
+    </div>
+    <div class="gallery-right">
+      <img src="{{ url_for('static', filename='images-nutrino/lartpc.png') }}" alt="Snake and Ladder" />
+    </div>
+  </div>
+</section>
+
+
+
+<section id="gallery" class="gallery">
+  <h2 class="block-heading">
+    Neutrino Oscillation
+  </h2>
+  <div class="content-middle-gallery">
+    <div class="gallery-left font-style-b">
+      <div>
+        <p>
+          Standard model neutrinos have no strong or electromagnetic interactions, only weak and gravitational interactions. 
+          However, because of its very small mass, it reacts very little with gravitational interactions, so it reacts only 
+          slightly with other elementary particles and is highly permeable.Therefore, observation using collisions with atomic 
+          nuclei and electrons is difficult, and it is necessary to prepare highly sensitive sensors and neutrino detectors 
+          composed of large-mass reactive materials in order to capture reactions that are extremely rare. Progress in research 
+          has been slow compared to particles. Some theories postulate that the neutrinos after the fourth generation are sterile 
+          neutrinos that only interact with gravity, but their existence has not yet been confirmed experimentally.
+        </p>
+
+        <a href="/ML-Research">
+          <button class="button1">
+            Machine Learning Research &ensp;
+            <svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+              clip-rule="evenodd">
+              <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+            </svg>
+          </button>
+        </a>
+
+        
+      </div>
+    </div>
+    <div class="gallery-right">
+      <img src="{{ url_for('static', filename='images-nutrino/oscilate.png') }}" alt="Snake and Ladder" />
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="gallery" class="gallery">
+  <h2 class="block-heading">
+    Quantum Mechanics
+  </h2>
+  <div class="content-middle-gallery">
+    <div class="gallery-left font-style-b">
+      <div>
+        <p>
+          Quantum mechanics is an important way of thinking in studying the movement of 
+          neutrinos. In order to understand the phenomena of atoms, molecules, and light, 
+          new laws of motion were discovered to replace classical theories such as Newton's 
+          laws of motion and Maxwell's laws of electromagnetics, and they became a system of 
+          mechanics. This is quantum mechanics.
+        </p>
+      </div>
+    </div>
+    <div class="gallery-right">
+      <img src="{{ url_for('static', filename='images-nutrino/quantum-mechanics-1.png') }}" alt="Snake and Ladder" />
+    </div>
+  </div>
+</section>
+
+
+<section id="gallery" class="gallery">
+  <h2 class="block-heading">
+    Quantum Mechanics of Neutrino Oscillations
+  </h2>
+  <div class="content-middle-gallery">
+    <div class="gallery-left font-style-b">
+      <div>
+        <p>
+          Because neutrinos do not readily react with other elementary particles, 
+          even the basic property of mass cannot be measured. Since its discovery, 
+          neutrinos have been thought to have nearly zero mass, and for many years 
+          they have been positioned as elementary particles with zero mass in the 
+          Standard Model. "Neutrino oscillation" is a phenomenon in which the "type" 
+          changes, such as one type of neutrino changing into another type of neutrino 
+          during flight, and then changing back to the original type of neutrino. By 
+          observing electrons, muons, and tau particles that are paired when a neutrino 
+          reacts, and determining the type of neutrino, we can understand the type change.
+        </p>
+
+        <a href="/ML-Research">
+          <button class="button1">
+            Machine Learning Research &ensp;
+            <svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+              clip-rule="evenodd">
+              <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+            </svg>
+          </button>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="gallery-right">
+      <img src="{{ url_for('static', filename='images-nutrino/Neutrino-oscillations.png') }}" alt="Snake and Ladder" />
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section id="gallery" class="gallery">
+  <div class="content-middle-gallery">
+    <div class="gallery-left font-style-b">    
+    </div>
+  </div>
+</section>      
+{% endblock %}
