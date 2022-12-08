@@ -36,6 +36,7 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
+
 /*-==========---------- NEUTRINO ----------============-*/
 
 .neutrino,
@@ -52,7 +53,6 @@
 .neutrino {
   margin: 100px 0;
 }
-
 .content-middle-neutrino,
 .content-middle-gallery {
   display: flex;
@@ -75,6 +75,14 @@
 .neutrino .block-heading span {
   color: rgba(0, 0, 0, 0.5);
 }
+
+.neutrino a {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 3x;
+  background-color:#FFFF00;
+}
+
 
 /*-==========---------- ENERGY ----------============-*/
 
@@ -183,6 +191,13 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+.gallery a {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 3x;
+  background-color:#FFFF00;
 }
 
 /*-==========---------- MISCELLENIOUS ----------============-*/
